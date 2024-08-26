@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url("../imagens/wallpaperRoblox.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.d_flex{
+    display: flex;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.align_center{
+    align-items: center;
+}
+
+main form{
+    width: 50%;
+    flex-direction: column;
+    padding: 22px;
+    border: solid black 2px;
+    font-family: "Lato";
+    background-color: rgb(172, 172, 172);
+    border-radius: 16px;
+}
+
+#erro{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    /* overflow: hidden; */
+    height: 232px;
+    align-items: center;
+    justify-content: center;
+}
+
+main form div{
+    font-family: "Lato";
+}
+
+main form span{
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+main section img{
+    width: 100%;
+    padding: 0px;
+    background-color: transparent;
+}
+
+main section img:hover{
+    padding: 10px;
+    background-color: transparent;
+    transform: scale(102%);
+    transition: 0.2s;
+}
+
+.mt-18{
+    margin-top: 18px;
+}
+
+.mt-12{
+    margin-top: 12px;
+}
+
+main form button{
+    border-radius: 8px;
+    height: 30px;
+    background-color: rgb(188, 218, 255);
+}
+
+main form button:hover{
+    border-radius: 8px;
+    height: 30px;
+    background-color: rgb(131, 187, 255);
+    transition: 0.2s;
+    transform: scale(102%);
+}
+
+main form button:active{
+    border-radius: 8px;
+    height: 30px;
+    background-color: rgb(93, 166, 255);
+    transition: 0.2s;
+    transform: scale(98%);
+}
+
+input{
+    border-radius: 8px;
+    height: 30px;
+}
+
+.modal-wrapper{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: grey;
+    height: 150px;
+    width: 300px;
+    border-radius: 16px;
+    font-family: "Lato";
+    overflow: hidden;
+}
+
+.modal-header{
+    padding: 16px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgb(105, 202, 67);
+}
+
+.modal-header button{
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-header button:hover{
+    cursor: pointer;
+}
+
+.modal-body{
+   padding: 16px;
+   /*gap: 16px;*/
+   display: flex;
+   flex-direction: column;
+   gap:16px;
+}
+
+.modal-body button:hover{
+    cursor: pointer;
+ }
+ 
+ .modal-header-error{
+    background-color: rgb(235, 49, 24);
+ }
+
+@media(max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width: 403px){
+    main{
+        flex-direction: column;
+    }
+    
+    #senha-esquecida{
+        margin-top: 36px;
+    }
+}
